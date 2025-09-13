@@ -101,8 +101,6 @@ public class DungeonThread extends Thread{
 		while (portaEscolhida == 5) {
 			portaEscolhida = (int) (Math.random() * 4) + 1;
 			
-			System.out.println(portaEscolhida);
-			
 			if (portas[portaEscolhida - 1] == false) {
 				portas[portaEscolhida - 1] = true;
 				System.out.println("Cavaleiro #" + cavaleiro[0] + " escolheu a porta: " + portaEscolhida);

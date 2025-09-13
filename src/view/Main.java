@@ -12,7 +12,7 @@ public class Main {
 		
 		Semaphore semaforo = new Semaphore(1);
 		int portaSaida = (int) (Math.random() * 4) + 1;	// Define a porta de saída verdadeira
-		System.out.println("A porta de saída é a porta " + portaSaida);
+		System.out.println("(A porta de saída é a porta " + portaSaida + ")");
 		for (int i = 1; i < 5; i++) {
 			Thread t = new DungeonThread(i, semaforo, itens, portaSaida);
 			t.start();
